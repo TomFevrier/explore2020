@@ -7,8 +7,10 @@
   height: inherit;
   background-size: cover;
   background-repeat: no-repeat; }
-  .StaticElement--double {
-    width: 200%; }
-  .StaticElement img {
-    height: 104%;
-    margin-top: -2%; }
+
+.StaticElement--double {
+  width: 200%; }
+
+.StaticElement img {
+  height: 104%;
+  margin-top: -2%; }

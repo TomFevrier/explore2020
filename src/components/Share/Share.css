@@ -6,13 +6,16 @@
   border-radius: 100%;
   color: #fff;
   cursor: pointer; }
-  .Share:before {
-    display: inline-block;
-    content: '';
-    font-size: 28px;
-    line-height: 48px;
-    font-family: 'FontAwesome'; }
-  .Share--facebook:before {
-    content: '\f09a'; }
-  .Share--twitter:before {
-    content: '\f099'; }
+
+.Share:before {
+  display: inline-block;
+  content: '';
+  font-size: 28px;
+  line-height: 48px;
+  font-family: 'FontAwesome'; }
+
+.Share--facebook:before {
+  content: '\f09a'; }
+
+.Share--twitter:before {
+  content: '\f099'; }

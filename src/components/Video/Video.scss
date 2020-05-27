@@ -5,7 +5,8 @@
     z-index:12;
     margin:auto;
     top:50%;
-    transform:translateY(-50%);
+	left: 50%;
+    transform:translate(-50%, -50%);
 
     &:after {
         content:'';

@@ -10,7 +10,7 @@
     transition:left $effect-slide-duration $effect-slide;
     transform:translateZ(0);
     overflow:hidden;
-    background-image:linear-gradient(#f9f9f9, #afbbca);
+    background-image:linear-gradient(#74D0F1, #DFF2FF);
 
     html.no-hiddenscroll & {
         transition:left $effect-scroll-duration $effect-scroll;
@@ -34,6 +34,10 @@
         max-width:inherit;
         height:inherit;
         padding:0;
+
+		&--dark {
+			background-image: linear-gradient(#003366, #000000);
+		}
 
         &--middle {
             vertical-align:middle;

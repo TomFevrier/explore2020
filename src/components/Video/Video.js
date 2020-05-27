@@ -86,7 +86,8 @@ export default class Edito extends Component {
             this.setState({bottom: this.props.positionBottom});
         }
         if (this.props.maxHeight) {
-            newHeight = Math.min(this.props.maxHeight, this.state.height); 
+			console.log(this.props.maxHeight)
+            newHeight = Math.min(this.props.maxHeight, this.state.height);
         }
         if (this.props.ratio) {
             if (deviceRatio >= this.props.ratio) {
@@ -96,6 +97,7 @@ export default class Edito extends Component {
             }
         }
         this.setState({height: newHeight});
+		console.log(this.state)
 
         playersRef.push(this);
     }

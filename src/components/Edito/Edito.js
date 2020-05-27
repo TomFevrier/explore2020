@@ -9,7 +9,8 @@ export default class Edito extends Component {
         super(props);
         this.state = {
             top: 'initial',
-            bottom: 'initial'
+            bottom: 'initial',
+			color: 'initial'
         };
     }
 
@@ -20,13 +21,20 @@ export default class Edito extends Component {
         if (this.props.positionBottom) {
             this.setState({bottom: this.props.positionBottom});
         }
+		if (this.props.color) {
+			this.setState({color: this.props.color})
+		}
     }
 
     render() {
 
         return (
             <div className="Edito">
-                <div className="Edito__wrapper" style={{top: this.state.top, bottom: this.state.bottom}}>
+                <div className="Edito__wrapper" style={{
+					top: this.state.top,
+					bottom: this.state.bottom,
+					color: this.state.color
+				}}>
                     <Text content={this.props.content}></Text>
                 </div>
             </div>

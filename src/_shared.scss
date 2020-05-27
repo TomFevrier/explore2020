@@ -63,11 +63,11 @@ $effect-scroll-duration: 1s;
 @mixin fontimport($font-family) {
     @font-face {
         font-family: $font-family;
-        src: url('https://www.lequipe.fr/common/fonts/' + $font-family + '.eot');
-        src: url('https://www.lequipe.fr/common/fonts/'+ $font-family +'.eot#iefix') format('embedded-opentype'),
-        url('https://www.lequipe.fr/common/fonts/'+ $font-family +'.woff') format('woff'),
-        url('https://www.lequipe.fr/common/fonts/'+ $font-family +'.ttf') format('truetype'),
-        url('https://www.lequipe.fr/common/fonts/'+ $font-family +'.svg#'+ $font-family) format('svg');
+        src: url('https://tomfevrier.github.io/explore2020-demo/fonts/' + $font-family + '.eot');
+        src: url('https://tomfevrier.github.io/explore2020-demo/fonts/'+ $font-family +'.eot#iefix') format('embedded-opentype'),
+        url('https://tomfevrier.github.io/explore2020-demo/fonts/'+ $font-family +'.woff') format('woff'),
+        url('https://tomfevrier.github.io/explore2020-demo/fonts/'+ $font-family +'.ttf') format('truetype'),
+        url('https://tomfevrier.github.io/explore2020-demo/fonts/'+ $font-family +'.svg#'+ $font-family) format('svg');
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;

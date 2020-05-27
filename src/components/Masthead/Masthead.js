@@ -11,31 +11,35 @@ export default class Element extends Component {
     render() {
 
         return (
-            <div className="Masthead">
-                <div className="Masthead__item">
-                    <span className="Masthead__label white">Conçu, écrit et réalisé par</span>
-                    <span className="Masthead__details">Charlotte Durand, Aurore Gayte, Gabrielle Ramain, Clotilde Ravel, Léa Sanchez, Lucas Wicky, Marie Zafimehy (avec Solène de Larquier)<a href="//twitter.com/sciencespoEDJ" className="twitter-follow-button" data-show-count="false" data-lang="fr" data-dnt="true">Suivre</a></span>
+            <div className='Masthead'>
+                <div className='Masthead__item'>
+                    <span className='Masthead__label white'>Conçu, écrit et réalisé par</span>
+                    <span className='Masthead__details'>Sophiane Amazian, Hortense Leblanc, Emma Grivotte, Thaïs Chaigne, Julien Apaloo et Tom Février<a href='//twitter.com/sciencespoEDJ' className='twitter-follow-button' data-show-count='false' data-lang='fr' data-dnt='true'>Suivre</a></span>
                 </div>
-                <div className="Masthead__item">
-                    <span className="Masthead__label white">Traductions</span>
-                    <span className="Masthead__details">Caroline Bossard, Sigi Hofmann, Annie Métral, Mathilde Saliou, Yann Schreiber, Victoria Wegner</span>
+                <div className='Masthead__item'>
+                    <span className='Masthead__label white'>Graphisme et intégration</span>
+                    <span className='Masthead__details'>Thaïs Chaigne et Tom Février</span>
                 </div>
-                <div className="Masthead__item">
-                    <span className="Masthead__label white">Développeur</span>
-                    <span className="Masthead__details">Raphaël Dardeau<a href="//twitter.com/iron_dev" className="twitter-follow-button" data-show-count="false" data-lang="fr" data-dnt="true">Suivre</a></span>
+				<div className='Masthead__item'>
+					<span className='Masthead__label white'>Photos</span>
+					<span className='Masthead__details'>Thaïs Chaigne, Hortense Leblanc, United Managers, archives L’Équipe</span>
+				</div>
+
+				<div className='Masthead__item'>
+					<span className='Masthead__label white'>Photos</span>
+					<span className='Masthead__details'>Thaïs Chaigne et Hortense Leblanc
+				</span>
+				</div>
+                <div className='Masthead__item'>
+                    <span className='Masthead__label white'>Développement</span>
+                    <span className='Masthead__details'>Raphaël Dardeau<a href='//twitter.com/iron_dev' className='twitter-follow-button' data-show-count='false' data-lang='fr' data-dnt='true'>Suivre</a></span>
                 </div>
-                <div className="Masthead__item">
-                    <span className="Masthead__label"></span>
-                    <span className="Masthead__details"></span>
+                <div className='Masthead__item'>
+                    <span className='Masthead__label'></span>
+                    <span className='Masthead__details'></span>
                 </div>
-                <div className="Masthead__item Masthead__item--full">
-                    <span className="Masthead__details"><span className="Masthead__label white">Photos :</span> Charlotte Durand ; collections personnelles d’Erik Schinegger et de Maria José Martínez-Patiño ; Athletics Federation of India (CC BY-SA 4.0) ; karlschranz.com (CC BY-SA 3.0) ; JD Noske, Anefo / Nationaal Archief (CC BY-SA 3.0 NL) et archives L’Equipe.</span>
-                </div>
-                <div className="Masthead__item Masthead__item--full">
-                    <span className="Masthead__details"><span className="Masthead__label white">Vidéos :</span> Charlotte Durand, Aurore Gayte</span>
-                </div>
-                <div className="Masthead__item Masthead__item--full">
-                    <span className="Masthead__details"><span className="Masthead__label white">Remerciements :</span> Philippe Peyre de l’AJL (Association des Journalistes LGBT), Grégory Blachier, Simon Ruben, Patrice Trapier, Ecole de Journalisme de Sciences Po, Erik et Christa Schinegger</span>
+                <div className='Masthead__item Masthead__item--full'>
+                    <span className='Masthead__details'><span className='Masthead__label white'>Remerciements :</span> Fred Gauquelin et United Managers, l’AG Caen, Grégory Blachier et l’École de Journalisme de Sciences Po, Julien Nguyen Dang</span>
                 </div>
             </div>
         );
