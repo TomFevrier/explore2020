@@ -30,27 +30,20 @@
         right:-1px;
         background:url('./img/TRIANGLE-OUVERTURE-DROITE.png') no-repeat 45%;
     }*/ }
-
-html.no-hiddenscroll .Skew {
-  transition: left 1s cubic-bezier(0.39, 0.575, 0.565, 1); }
-
-.Skew--left {
-  width: 220%;
-  left: -20%; }
-
-.Skew--left:after {
-  display: none; }
-
-.Skew--left img {
-  position: absolute;
-  right: 0; }
-
-.Skew--right {
-  width: 220%; }
-
-.Skew--right:before {
-  display: none; }
-
-.Skew img {
-  height: 104%;
-  margin-top: -2%; }
+  html.no-hiddenscroll .Skew {
+    transition: left 1s cubic-bezier(0.39, 0.575, 0.565, 1); }
+  .Skew--left {
+    width: 220%;
+    left: -20%; }
+    .Skew--left:after {
+      display: none; }
+    .Skew--left img {
+      position: absolute;
+      right: 0; }
+  .Skew--right {
+    width: 220%; }
+    .Skew--right:before {
+      display: none; }
+  .Skew img {
+    height: 104%;
+    margin-top: -2%; }

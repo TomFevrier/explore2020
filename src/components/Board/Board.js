@@ -63,7 +63,6 @@ export default class Board extends Component {
         return (
             <div id='board' className='Board' style={{marginTop:this.state.boardTop, left:0,  minWidth:this.state.slideWidth, height: this.state.boardHeight}}>
 
-
                 {/* Introduction */}
 				<div className='Board__slide Board__slide--dark'>
                     <Element name='commentateurs.png' positionLeft={mobile ? '0' : '30%'} index='p1'></Element>
@@ -72,51 +71,54 @@ export default class Board extends Component {
                     <Edito content={this.props.datas.text.intro[0]} positionTop='15%' color='white'></Edito>
                 </div>
 				<div className='Board__slide Board__slide--dark'>
-                    <Edito content={this.props.datas.text.intro[1]} positionTop='15%' color='white'></Edito>
+                    <Edito content={this.props.datas.text.intro[1]} positionTop='30%' color='white'></Edito>
                 </div>
 				<div className='Board__slide Board__slide--dark'>
-					<Edito content={this.props.datas.text.intro[2]} positionTop='15%' color='white'></Edito>
+					<Edito content={this.props.datas.text.intro[2]} positionTop='50%' color='white'></Edito>
 				</div>
 				<div className='Board__slide Board__slide--dark'>
-                    <Edito content={this.props.datas.text.intro[3]} positionTop='15%' color='white'></Edito>
+                    <Edito content={this.props.datas.text.intro[3]} positionBottom='15%' color='white'></Edito>
 					<Element name='machine1.png' positionLeft='30%' index='p2'></Element>
                 </div>
 
 				{/* Avant-gardisme */}
+				<div className='Board__slide Board__slide--dark' style={!mobile ? { minWidth: '55vh' } : {}}>
+                    <Skew position='left' name='skew1-texte.png' bg='skew1-image.png'></Skew>
+                </div>
+				<div className='Board__slide Board__slide' style={!mobile ? { minWidth: '55vh' } : {}}>
+                </div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[0]} positionBottom='15%'></Edito>
+                    <Edito content={this.props.datas.text.avantGardisme[0]} positionTop='30%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
 					<Element name='instal-matos.png' index='p1'></Element>
-                    <Edito content={this.props.datas.text.avantGardisme[1]} positionBottom='10%'></Edito>
+                    <Edito content={this.props.datas.text.avantGardisme[1]} positionBottom='5%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[2]} positionTop='15%'></Edito>
+                    <Edito content={this.props.datas.text.avantGardisme[2]} positionTop='30%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[3]} positionTop='15%'></Edito>
+                    <Edito content={this.props.datas.text.avantGardisme[3]} positionTop='5%'></Edito>
 					<Element name='stat-mobile.png' index='p1'></Element>
                 </div>
 				<div className='Board__slide Board__slide'>
                     <Element name='citation-gauquelin.png' index='p1'></Element>
                 </div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[4]} positionTop='15%'></Edito>
+					<Element name='stat-laptop.png' index='p1'></Element>
+                    <Edito content={this.props.datas.text.avantGardisme[4]} positionBottom='5%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
                     <Edito content={this.props.datas.text.avantGardisme[5]} positionBottom='15%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
-					<Element name='stat-laptop.png' index='p1'></Element>
-                </div>
-				<div className='Board__slide Board__slide'>
-					<Video id='x7u1b8w' ratio='1' positionBottom='calc(-200px + 5%)' positionTop='auto' maxHeight='400'></Video>
+					<Video id='x7u1b8w' ratio='1' positionBottom='calc(-200px + 20%)' positionTop='auto' maxHeight='400'></Video>
                 </div>
 				<div className='Board__slide Board__slide'>
                     <Edito content={this.props.datas.text.avantGardisme[6]} positionTop='15%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[7]} positionTop='15%'></Edito>
+                    <Edito content={this.props.datas.text.avantGardisme[7]} positionTop='40%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
 					<Element name='communique-um.png' index='p1'></Element>
@@ -137,16 +139,14 @@ export default class Board extends Component {
 					<Element name='citation-lepen1.png' index='p1'></Element>
 				</div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[10]} positionTop='15%'></Edito>
-                </div>
-				<div className='Board__slide Board__slide'>
+                    <Edito content={this.props.datas.text.avantGardisme[10]} positionTop='10%'></Edito>
 					<Element name='citation-lepen2.png' index='p1'></Element>
-				</div>
-				<div className='Board__slide Board__slide'>
-					<Video id='x7u1bu0' ratio='1' positionTop='calc(200px + 5%)' maxHeight='400'></Video>
                 </div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[11]} positionTop='15%'></Edito>
+					<Video id='x7u1bu0' ratio='1' positionTop='50%' maxHeight='400'></Video>
+                </div>
+				<div className='Board__slide Board__slide'>
+                    <Edito content={this.props.datas.text.avantGardisme[11]} positionBottom='15%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
                     <Edito content={this.props.datas.text.avantGardisme[12]} positionTop='15%'></Edito>
@@ -172,6 +172,7 @@ export default class Board extends Component {
 				</div>
 				<div className='Board__slide Board__slide--dark'>
 					<Edito content={this.props.datas.text.retourFutur[1]} positionTop='15%' color='white'></Edito>
+					<Element name='banc.png' positionLeft='50%' index='m2' opacity={0.5}></Element>
 				</div>
 				<div className='Board__slide Board__slide--dark'>
 					<Edito content={this.props.datas.text.retourFutur[2]} positionTop='15%' color='white'></Edito>
@@ -179,8 +180,13 @@ export default class Board extends Component {
 				</div>
 
 				{/* Rêve ou révolution ? */}
+				<div className='Board__slide Board__slide--dark' style={!mobile ? { minWidth: '55vh' } : {}}>
+                    <Skew position='left' name='skew2-texte.png' bg='skew2-image.png'></Skew>
+                </div>
+				<div className='Board__slide Board__slide' style={!mobile ? { minWidth: '55vh' } : {}}>
+                </div>
 				<div className='Board__slide Board__slide'>
-					<Edito content={this.props.datas.text.reveRevolution[0]} positionTop='15%'></Edito>
+					<Edito content={this.props.datas.text.reveRevolution[0]} positionTop='30%'></Edito>
 				</div>
 				<div className='Board__slide Board__slide'>
 					<Edito content={this.props.datas.text.reveRevolution[1]} positionTop='15%'></Edito>
@@ -205,7 +211,9 @@ export default class Board extends Component {
 					</iframe>
 				</div>
 				<div className='Board__slide Board__slide'>
-					<Edito content={this.props.datas.text.reveRevolution[4]} positionTop='15%'></Edito>
+					<Edito content={this.props.datas.text.reveRevolution[4]} positionTop='10%'></Edito>
+					<Element name='joueur1.png' index='m1' opacity={0.6}></Element>
+					<Element name='joueur2.png' index='m2' positionLeft='75%' opacity={0.4}></Element>
 				</div>
 				<div className='Board__slide Board__slide'>
 					<Edito content={this.props.datas.text.reveRevolution[5]} positionTop='15%'></Edito>
@@ -214,11 +222,16 @@ export default class Board extends Component {
 					<Edito content={this.props.datas.text.reveRevolution[6]} positionTop='15%'></Edito>
 				</div>
 				<div className='Board__slide Board__slide'>
-					<Edito content={this.props.datas.text.reveRevolution[7]} positionBottom='15%'></Edito>
+					<Edito content={this.props.datas.text.reveRevolution[7]} positionBottom='5%'></Edito>
 					<Element name='machine4.png' positionLeft='30%' index='p2'></Element>
 				</div>
 
 				{/* Outro */}
+				<div className='Board__slide Board__slide' style={!mobile ? { minWidth: '55vh' } : {}}>
+                    <Skew position='left' name='skew3-texte.png' bg='skew3-image.png'></Skew>
+                </div>
+				<div className='Board__slide Board__slide--dark' style={!mobile ? { minWidth: '55vh' } : {}}>
+                </div>
 				<div className='Board__slide Board__slide--dark'>
 					<Edito content={this.props.datas.text.outro[0]} positionTop='15%' color='white'></Edito>
 				</div>
@@ -234,29 +247,7 @@ export default class Board extends Component {
 				<div className='Board__slide Board__slide--dark'>
 					<Edito content={this.props.datas.text.outro[4]} positionTop='15%' color='white'></Edito>
 				</div>
-
-
-                {/*
-				<div className='Board__slide board-small-slide'>
-					<Skew position='left' name='' bg=''></Skew>
-				</div>
-
-				<div className='Board__slide Board__slide--top'>
-                    <Element name='FOND2.png' index='p2' positionLeft='-10%'  ></Element>
-                </div>
-				<div className='Board__slide Board__slide--top'>
-                    <Edito content={this.props.datas.text[0].zone_1} positionTop='15%'></Edito>
-                </div>
-				<div className='Board__slide Board__slide--top'>
-                    <Edito content={this.props.datas.text[0].zone_1} positionTop='15%'></Edito>
-                </div>
-
-                <div className='Board__slide Board__slide--top'>
-					<iframe src='https://flo.uri.sh/visualisation/2137621/embed' frameborder='0' scrolling='no'
-						style={{ position: 'absolute', width: '100%', height: '90%', zIndex: 42, top: '50%', transform: 'translateY(-50%)' }}>
-					</iframe>
-                </div>
-				*/}
+				
                 <div className='Board__slide Board__slide--dark'>
                     <Masthead />
                 </div>

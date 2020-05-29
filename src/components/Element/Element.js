@@ -28,6 +28,8 @@ export default class Element extends Component {
 		if (this.state.right) {
 			style = {marginRight: this.state.right, left: 'auto', right: 0}
 		}
+		if (this.props.opacity)
+			style.opacity = this.props.opacity;
         return (
             <div id={this.props.name} className={"Element Element--z" + this.state.index + " js-element-z" + this.state.index}
                  style={style}>
