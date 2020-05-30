@@ -2,7 +2,7 @@ import config from '../../config';
 import React, { Component } from 'react';
 import Edito from '../Edito/Edito';
 import Element from '../Element/Element';
-import StaticElement from '../StaticElement/StaticElement';
+// import StaticElement from '../StaticElement/StaticElement';
 import Skew from '../Skew/Skew';
 import Video from '../Video/Video';
 import Masthead from '../Masthead/Masthead';
@@ -124,7 +124,7 @@ export default class Board extends Component {
 				<div className='Board__slide Board__slide'>
                     <Edito content={this.props.datas.text.avantGardisme[7]} positionTop='15%'></Edito>
                 </div>
-				<div className='Board__slide Board__slide' style={mobile ? { minWidth: '800px' } : {}}>
+				<div className='Board__slide Board__slide' style={mobile ? { minWidth: this.state.slideWidth * 2 } : {}}>
 					<Element name='communique-um-large.png' positionLeft={mobile ? '0' : '-20%'} index='p1'></Element>
 				</div>
 				<div className='Board__slide Board__slide'>
@@ -136,7 +136,7 @@ export default class Board extends Component {
 				<div className='Board__slide Board__slide'>
                     <Edito content={this.props.datas.text.avantGardisme[9]} positionTop='15%'></Edito>
                 </div>
-				<div className='Board__slide Board__slide' style={mobile ? { minWidth: '800px' } : {}}>
+				<div className='Board__slide Board__slide' style={mobile ? { minWidth: this.state.slideWidth * 2 } : {}}>
 					<Element name='votesV2.png' positionLeft={mobile ? '0' : '-20%'} index='p1'></Element>
 				</div>
 
@@ -145,7 +145,7 @@ export default class Board extends Component {
 				</div>
 				<div className='Board__slide Board__slide'>
                     <Edito content={this.props.datas.text.avantGardisme[10]} positionTop='5%'></Edito>
-					<Element name='joueurs-data-V2.png' index='m2' positionLeft='25%' opacity={0.6}></Element>
+					<Element name='joueurs-data-V2.png' index='m2' positionLeft={mobile ? '0' : '25%'} opacity={0.6}></Element>
                 </div>
 				<div className='Board__slide Board__slide'>
 					<Video id='x7u1bu0' ratio='1' positionTop='50%' maxHeight='400'></Video>
@@ -202,19 +202,20 @@ export default class Board extends Component {
 					<Element name='logos-clubs2.png' index='p1'></Element>
 				</div>
 				<div className='Board__slide Board__slide'>
-					<Element name='ardoise.png' positionLeft='25%' index='m1' opacity={0.4}></Element>
+					<Element name='ardoise.png' positionLeft={mobile ? '0' : '25%'} index='m1' opacity={0.4}></Element>
 					<Edito content={this.props.datas.text.reveRevolution[2]} positionBottom='15%'></Edito>
 				</div>
 				<div className='Board__slide Board__slide'>
 					<Edito content={this.props.datas.text.reveRevolution[3]} positionTop='10%'></Edito>
-					<Element name='joueur-solo.png' index='m1' positionLeft='25%' opacity={0.6}></Element>
+					<Element name='joueur-solo.png' index='m1' positionLeft={mobile ? '0' : '25%'} opacity={0.6}></Element>
 				</div>
 				<div className='Board__slide Board__slide'>
 					<iframe src='https://flo.uri.sh/visualisation/2137621/embed' frameBorder='0' scrolling='no'
 						style={{
 							position: 'absolute',
-							width: mobile ? '80%' : '60%',
-							height: mobile ? '80%' : '90%',
+							maxWidth: mobile ? this.state.slideWidth : 'none',
+							width: `${0.9 * window.innerHeight / 1.7}px`,
+							height: '90%',
 							zIndex: 42,
 							top: '50%',
 							left: '50%',

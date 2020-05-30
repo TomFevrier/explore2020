@@ -24,12 +24,6 @@ export default class Element extends Component {
 					<span className='Masthead__label white'>Photos</span>
 					<span className='Masthead__details'>Thaïs Chaigne, Hortense Leblanc, United Managers, archives L’Équipe</span>
 				</div>
-
-				<div className='Masthead__item'>
-					<span className='Masthead__label white'>Photos</span>
-					<span className='Masthead__details'>Thaïs Chaigne et Hortense Leblanc
-				</span>
-				</div>
                 <div className='Masthead__item'>
                     <span className='Masthead__label white'>Développement</span>
                     <span className='Masthead__details'>Raphaël Dardeau<a href='//twitter.com/iron_dev' className='twitter-follow-button' data-show-count='false' data-lang='fr' data-dnt='true'>Suivre</a></span>
