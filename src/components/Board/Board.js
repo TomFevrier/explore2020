@@ -65,16 +65,18 @@ export default class Board extends Component {
 
                 {/* Introduction */}
 				<div className='Board__slide Board__slide--dark'>
-                    <Element name='commentateurs.png' positionLeft={mobile ? '0' : '30%'} index='p1'></Element>
+                    <Element name='commentateurs-feather.png' positionLeft={mobile ? '0' : '30%'} index='p1'></Element>
                 </div>
 				<div className='Board__slide Board__slide--dark'>
                     <Edito content={this.props.datas.text.intro[0]} positionTop='15%' color='white'></Edito>
+					<Element name='ultras.png' index='m2' positionLeft='50%'></Element>
                 </div>
 				<div className='Board__slide Board__slide--dark'>
-                    <Edito content={this.props.datas.text.intro[1]} positionTop='30%' color='white'></Edito>
+                    <Edito content={this.props.datas.text.intro[1]} positionTop='40%' color='white'></Edito>
                 </div>
 				<div className='Board__slide Board__slide--dark'>
-					<Edito content={this.props.datas.text.intro[2]} positionTop='50%' color='white'></Edito>
+					<Edito content={this.props.datas.text.intro[2]} positionTop='10%' color='white'></Edito>
+					<Element name='coach.png' positionLeft='50%' index='m1' opacity={0.3}></Element>
 				</div>
 				<div className='Board__slide Board__slide--dark'>
                     <Edito content={this.props.datas.text.intro[3]} positionBottom='15%' color='white'></Edito>
@@ -95,7 +97,8 @@ export default class Board extends Component {
                     <Edito content={this.props.datas.text.avantGardisme[1]} positionBottom='5%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[2]} positionTop='30%'></Edito>
+					<Element name='ballonhautgauche.png' index='p2'></Element>
+                    <Edito content={this.props.datas.text.avantGardisme[2]} positionTop='50%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
                     <Edito content={this.props.datas.text.avantGardisme[3]} positionTop='5%'></Edito>
@@ -109,47 +112,51 @@ export default class Board extends Component {
                     <Edito content={this.props.datas.text.avantGardisme[4]} positionBottom='5%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[5]} positionBottom='15%'></Edito>
+                    <Edito content={this.props.datas.text.avantGardisme[5]} positionTop='30%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
 					<Video id='x7u1b8w' ratio='1' positionBottom='calc(-200px + 20%)' positionTop='auto' maxHeight='400'></Video>
                 </div>
 				<div className='Board__slide Board__slide'>
                     <Edito content={this.props.datas.text.avantGardisme[6]} positionTop='15%'></Edito>
+					<Element name='joueurs.png' index='m2' positionLeft='25%' opacity={0.5}></Element>
                 </div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[7]} positionTop='40%'></Edito>
+                    <Edito content={this.props.datas.text.avantGardisme[7]} positionTop='15%'></Edito>
                 </div>
-				<div className='Board__slide Board__slide'>
-					<Element name='communique-um.png' index='p1'></Element>
+				<div className='Board__slide Board__slide' style={mobile ? { minWidth: '800px' } : {}}>
+					<Element name='communique-um-large.png' positionLeft={mobile ? '0' : '-20%'} index='p1'></Element>
 				</div>
 				<div className='Board__slide Board__slide'>
                     <Edito content={this.props.datas.text.avantGardisme[8]} positionTop='15%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
-					<Element name='infogV12.png' positionLeft={mobile ? '0' : '20%'} index='p1'></Element>
+					<Element name='infogV40.png' positionLeft={mobile ? '0' : '20%'} index='p1'></Element>
 				</div>
 				<div className='Board__slide Board__slide'>
                     <Edito content={this.props.datas.text.avantGardisme[9]} positionTop='15%'></Edito>
                 </div>
-				<div className='Board__slide Board__slide'>
-					<Element name='votes.png' index='p1'></Element>
+				<div className='Board__slide Board__slide' style={mobile ? { minWidth: '800px' } : {}}>
+					<Element name='votesV2.png' positionLeft={mobile ? '0' : '-20%'} index='p1'></Element>
 				</div>
+
 				<div className='Board__slide Board__slide'>
 					<Element name='citation-lepen1.png' index='p1'></Element>
 				</div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[10]} positionTop='10%'></Edito>
-					<Element name='citation-lepen2.png' index='p1'></Element>
+                    <Edito content={this.props.datas.text.avantGardisme[10]} positionTop='5%'></Edito>
+					<Element name='joueurs-data-V2.png' index='m2' positionLeft='25%' opacity={0.6}></Element>
                 </div>
 				<div className='Board__slide Board__slide'>
 					<Video id='x7u1bu0' ratio='1' positionTop='50%' maxHeight='400'></Video>
                 </div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[11]} positionBottom='15%'></Edito>
+					<Element name='citation-lepen2.png' index='p1'></Element>
+                    <Edito content={this.props.datas.text.avantGardisme[11]} positionBottom='5%'></Edito>
                 </div>
 				<div className='Board__slide Board__slide'>
-                    <Edito content={this.props.datas.text.avantGardisme[12]} positionTop='15%'></Edito>
+                    <Edito content={this.props.datas.text.avantGardisme[12]} positionTop='10%'></Edito>
+					<Element name='tribune.png' index='p1'></Element>
                 </div>
 				<div className='Board__slide Board__slide'>
 					<Element name='citation-camillo.png' index='p1'></Element>
@@ -168,6 +175,7 @@ export default class Board extends Component {
 						transform: 'skew(-20deg)',
 						backgroundImage: 'linear-gradient(#003366, #000000)'
 					}} />
+					<Element name='ballonhautdroite-clair.png' index='p2' positionLeft='25%'></Element>
 					<Edito content={this.props.datas.text.retourFutur[0]} positionBottom='15%' color='white'></Edito>
 				</div>
 				<div className='Board__slide Board__slide--dark'>
@@ -189,13 +197,17 @@ export default class Board extends Component {
 					<Edito content={this.props.datas.text.reveRevolution[0]} positionTop='30%'></Edito>
 				</div>
 				<div className='Board__slide Board__slide'>
-					<Edito content={this.props.datas.text.reveRevolution[1]} positionTop='15%'></Edito>
+					<Edito content={this.props.datas.text.reveRevolution[1]} positionTop='10%'></Edito>
+					<Element name='logos-clubs1.png' index='p2'></Element>
+					<Element name='logos-clubs2.png' index='p1'></Element>
 				</div>
 				<div className='Board__slide Board__slide'>
-					<Edito content={this.props.datas.text.reveRevolution[2]} positionTop='15%'></Edito>
+					<Element name='ardoise.png' positionLeft='25%' index='m1' opacity={0.4}></Element>
+					<Edito content={this.props.datas.text.reveRevolution[2]} positionBottom='15%'></Edito>
 				</div>
 				<div className='Board__slide Board__slide'>
-					<Edito content={this.props.datas.text.reveRevolution[3]} positionTop='15%'></Edito>
+					<Edito content={this.props.datas.text.reveRevolution[3]} positionTop='10%'></Edito>
+					<Element name='joueur-solo.png' index='m1' positionLeft='25%' opacity={0.6}></Element>
 				</div>
 				<div className='Board__slide Board__slide'>
 					<iframe src='https://flo.uri.sh/visualisation/2137621/embed' frameBorder='0' scrolling='no'
@@ -219,7 +231,8 @@ export default class Board extends Component {
 					<Edito content={this.props.datas.text.reveRevolution[5]} positionTop='15%'></Edito>
 				</div>
 				<div className='Board__slide Board__slide'>
-					<Edito content={this.props.datas.text.reveRevolution[6]} positionTop='15%'></Edito>
+					<Edito content={this.props.datas.text.reveRevolution[6]} positionTop='10%'></Edito>
+					<Element name='ballonbasdroite.png' index='p2'></Element>
 				</div>
 				<div className='Board__slide Board__slide'>
 					<Edito content={this.props.datas.text.reveRevolution[7]} positionBottom='5%'></Edito>
@@ -233,21 +246,25 @@ export default class Board extends Component {
 				<div className='Board__slide Board__slide--dark' style={!mobile ? { minWidth: '55vh' } : {}}>
                 </div>
 				<div className='Board__slide Board__slide--dark'>
-					<Edito content={this.props.datas.text.outro[0]} positionTop='15%' color='white'></Edito>
+					<Edito content={this.props.datas.text.outro[0]} positionTop='10%' color='white'></Edito>
+					<Element name='sondage.png' index='p1'></Element>
+					<Element name='stade-pdp.png' index='m2'></Element>
 				</div>
 				<div className='Board__slide Board__slide--dark'>
-					<Edito content={this.props.datas.text.outro[1]} positionTop='15%' color='white'></Edito>
+					<Element name='score.png' index='p1'></Element>
+					<Edito content={this.props.datas.text.outro[1]} positionBottom='10%' color='white'></Edito>
 				</div>
 				<div className='Board__slide Board__slide--dark'>
 					<Edito content={this.props.datas.text.outro[2]} positionTop='15%' color='white'></Edito>
 				</div>
 				<div className='Board__slide Board__slide--dark'>
-					<Edito content={this.props.datas.text.outro[3]} positionTop='15%' color='white'></Edito>
+					<Edito content={this.props.datas.text.outro[3]} positionTop='30%' color='white'></Edito>
 				</div>
 				<div className='Board__slide Board__slide--dark'>
 					<Edito content={this.props.datas.text.outro[4]} positionTop='15%' color='white'></Edito>
+					<Element name='psg-moins-bleu.png' index='m1' positionLeft='30%' opacity={0.6}></Element>
 				</div>
-				
+
                 <div className='Board__slide Board__slide--dark'>
                     <Masthead />
                 </div>

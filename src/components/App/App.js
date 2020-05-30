@@ -58,10 +58,9 @@ export default class App extends Component {
                 <div className='App'>
                     <SplashScreen />
                     <Header />
-                    {/* <Swipeable className='App__swipeable' onSwipedLeft={swipeFirst} onClick={swipeFirst}>
+                    <Swipeable className='App__swipeable' onSwipedLeft={swipeFirst} onClick={swipeFirst}>
                         <Cover />
                     </Swipeable>
-					*/}
                     <Swipeable className='App__swipeable' onSwipedLeft={swipeLeft} onSwipedRight={swipeRight} onClick={clickBoard}>
                         <Board datas={this.state.datas}/>
                     </Swipeable>

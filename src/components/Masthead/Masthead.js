@@ -18,7 +18,7 @@ export default class Element extends Component {
                 </div>
                 <div className='Masthead__item'>
                     <span className='Masthead__label white'>Graphisme et intégration</span>
-                    <span className='Masthead__details'>Thaïs Chaigne et Tom Février</span>
+                    <span className='Masthead__details'>Thaïs Chaigne, Hortense Leblanc et Tom Février</span>
                 </div>
 				<div className='Masthead__item'>
 					<span className='Masthead__label white'>Photos</span>

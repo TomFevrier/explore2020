@@ -6,8 +6,9 @@
   bottom: 0;
   left: 0;
   background: #000; }
-  .Progressbar__value {
-    width: 0%;
-    height: inherit;
-    background: #c6aa57;
-    transition: width 0.6s cubic-bezier(0.39, 0.575, 0.565, 1); }
+
+.Progressbar__value {
+  width: 0%;
+  height: inherit;
+  background: #c6aa57;
+  transition: width 0.6s cubic-bezier(0.39, 0.575, 0.565, 1); }

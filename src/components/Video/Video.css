@@ -5,10 +5,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
-  .Video:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: calc(100% - 50px); }
+
+.Video:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 50px); }
